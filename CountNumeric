@@ -1,0 +1,34 @@
+package com.guvi.codekata;
+
+import java.util.Scanner;
+
+public class CountNumeric 
+{
+	public void countNumericInString(String s)
+	{
+		int count=0;
+		char[]c=s.toCharArray();
+		for (int i = 0; i < c.length; i++) 
+		{
+			if(Character.isDigit(c[i]))
+			{
+				count++;
+			}
+			
+			
+		}
+		System.out.println(count);
+	}
+	
+	public static void main(String[] args)
+	{
+		System.out.println("enter the string");
+		Scanner sc=new Scanner(System.in);
+		String s=sc.next();
+		CountNumeric co=new CountNumeric();
+		co.countNumericInString(s);
+		
+		
+	}
+
+}
