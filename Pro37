@@ -1,0 +1,26 @@
+package com.guvi.codekata;
+
+import java.util.Scanner;
+
+/*
+ * swap two numbers using bitwise
+ * i/p-->a=10;b=25
+ * o/p-->a=25;b=10;
+ * 
+ */
+public class Pro37
+{
+	
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		a=a^b;
+		b=a^b;
+		a=a^b;
+		System.out.println("a-->"+a);
+		System.out.println("b-->"+b);
+	}
+
+}
