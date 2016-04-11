@@ -1,0 +1,41 @@
+package com.guvi.codekata.hunter;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+/*
+ * .Given an array of n numbers,
+ * give an algorithm to find the first element in the array which is repeated
+ * i/p-->[1,2,3,4,5,1,2,3]
+ * o/p-->[1,1,2,2,3,3,4,5]-->1
+ */
+public class ProHunter7 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("enter the len of an array");
+		Scanner scan=new Scanner(System.in);
+		int n=scan.nextInt();
+		int []arr=new int[n];
+		int[] op=new int[n];
+		System.out.println("enter ur values ");
+		for(int i=0;i<arr.length;i++)
+		{
+			arr[i]=scan.nextInt();
+			System.out.println("added"+arr[i]);
+		}
+		ArrayList<Integer>al=new ArrayList<Integer>();
+		for(int i=0;i<arr.length;i++)
+		{
+			for(int j=i+1;j<arr.length;j++)
+			{
+				if(arr[i]==arr[j])
+				{
+					al.add(arr[i]);
+				}
+			}
+		}
+		System.out.println("output-->"+al.get(0));
+	}
+
+}
