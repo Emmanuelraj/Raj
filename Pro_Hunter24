@@ -1,0 +1,43 @@
+package com.guvi.codekata.hunter;
+
+import java.util.Scanner;
+
+/*
+ * Given an array of integers,
+ *  find two numbers such that they add up to a specific target number.  
+ * Input: numbers={2, 7, 11, 15}, target=9
+ */
+public class Pro_Hunter24
+{
+	
+	
+	
+	public static void main(String[] args) 
+	{
+		System.out.println("enter the array length");
+		
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int ar[]=new int[n];
+		for(int i=0;i<n;i++)
+		{
+			ar[i]=sc.nextInt();
+		}
+		System.out.println("enter your target");
+		Scanner sc1=new Scanner(System.in);
+		int target=sc1.nextInt();
+		for(int i=0;i<ar.length;i++)
+		{
+			for(int j=i+1;j<ar.length;j++)
+			{
+				if(ar[i]+ar[j]==target)
+				{
+					System.out.println("first:"+ar[i]+"secnd:"+ar[j]);
+				}
+			}
+		}
+		
+		
+	}
+
+}
