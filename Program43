@@ -1,0 +1,57 @@
+package com.guvi.codekata.hunter;
+
+public class Program43
+{
+	
+	public static void main(String[] args) 
+	{
+		/*
+		 * String str="aaabbc";
+		int c=1;
+		String s="";
+		for(int i=0;i<str.length();i++)
+		{
+			c=1;
+			for(int j=i+1;j<str.length();j++)
+			{
+				if(str.charAt(i)==str.charAt(j))
+				{
+					c++;
+					i=j;
+				}
+			}
+			s=s+str.charAt(i)+c;
+			
+		}
+		System.out.println(s);
+		
+		 */
+		String s="a3b2c1";		
+		char[]c1=s.toCharArray();
+		String op="";
+		int count=0;
+		int c=0;
+		for(int i=0;i<c1.length;i++)
+		{
+			c=0;
+			if(Character.isLetter(c1[i])&&Character.isDigit(c1[i+1]))
+			{
+				 String str=""+c1[i+1];
+				 count=Integer.parseInt(str); 
+				 System.out.println(count);
+			
+				 while(c<count)
+				 {
+					 op=op+c1[i];
+					 c++;
+				 }
+					
+			}
+			
+		}System.out.println(op);
+	
+	
+		
+	}
+
+}
