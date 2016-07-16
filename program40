@@ -1,0 +1,31 @@
+package com.guvi.codekata.hunter;
+import java.util.*;
+/*
+ * 40.Write a program to check 
+ * if the sum of digits of a given number is palindrome number or not
+ */
+public class Program40 
+{
+	public static void main(String[] args)
+	{
+		Scanner scan=new Scanner(System.in);
+		int n=scan.nextInt();
+		int temp=n;
+		int rev=0;
+		while(n>0)
+		{
+			int n1=n%10;
+			
+			rev=rev*10+n1;
+			n=n/10;
+			
+		}
+		 
+		if(temp==rev)
+		{
+			System.out.println("palin");
+		}else
+		System.out.println("not palin");
+	}
+
+}
