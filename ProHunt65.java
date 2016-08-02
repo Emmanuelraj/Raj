@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 // An array of integers is given.The given element is removed new array is returned. 
 //input1:{10,10,20,30,76} output: {20,20,76}(10 is asked to remove) 
-public class Pro65 {
+public class ProHunt65 {
 	
 	public static void main(String[] args)
 	{
@@ -12,6 +12,8 @@ public class Pro65 {
 		System.out.println("enter the length");
 		Scanner scan=new Scanner(System.in);
 		int n=scan.nextInt();
+		System.out.println("enter the nu");
+		int num=scan.nextInt();
 		int[]arr=new int[n];
 		for(int i=0;i<n;i++)
 		{
@@ -20,7 +22,7 @@ public class Pro65 {
 		ArrayList<Integer> al=new ArrayList<Integer>();
 		for(int i:arr)
 		{
-			if(i!=10)
+			if(i!=num)
 			{
 			al.add(i);
 			}
