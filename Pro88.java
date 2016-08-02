@@ -31,7 +31,10 @@ public class Pro88
 		{
 		str1=str1+s;
 		}
-	System.out.println(str1);
+	//System.out.println(str1);
+	StringBuffer sb=new StringBuffer(str1);
+	sb.reverse();
+	System.out.println(sb);
 	
 	}
 
